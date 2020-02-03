@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 
-const StyledH3 = styled.h2`
+const StyledH3 = styled.h3`
   font-size: 20px;
 `
 const H3 = ({children}) => (
