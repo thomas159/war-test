@@ -111,6 +111,7 @@ const SearchButton = styled.button`
   cursor: pointer;
 }`
 
+
 export default class Task1 extends React.Component {
   render() {
     return (

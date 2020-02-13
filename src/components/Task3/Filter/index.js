@@ -53,10 +53,10 @@ const Filter = ({itemsLimit, setItemsLimit}) => {
     <Wrap>
       <StyledButton onClick={togglefilterVisible}>{(itemsLimit === null || itemsLimit === Infinity) ? 'All' : itemsLimit}</StyledButton>
       <OptionWrap active={filterVisible === true}>
-        <Option onClick={() => { setItemsLimit(Infinity); this.handleShow(false) }}>show All</Option>
-        <Option onClick={() => { setItemsLimit(10); this.handleShow(false) }}>upto 10</Option>
-        <Option onClick={() => { setItemsLimit(100); this.handleShow(false) }}>upto 100</Option>
-        <Option onClick={() => { setItemsLimit(200); this.handleShow(false) }}>upto 200</Option>
+        <Option onClick={() => { setItemsLimit(Infinity); setfilterVisible(false) }}>show All</Option>
+        <Option onClick={() => { setItemsLimit(10); setfilterVisible(false) }}>upto 10</Option>
+        <Option onClick={() => { setItemsLimit(100); setfilterVisible(false) }}>upto 100</Option>
+        <Option onClick={() => { setItemsLimit(200); setfilterVisible(false) }}>upto 200</Option>
       </OptionWrap>
     </Wrap>
   )
